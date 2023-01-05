@@ -10,13 +10,14 @@ Clear();
 
 string[] first = new string[] { "Hello", "2", "world", ":-)" };
 string[] final = new string[first.Length];
+int SizeStringToShow = 3;
 
 void FillArr(string[] arr1, string[] arr2)
 {
     int count = 0;
     for (int i = 0; i < arr1.Length; i++)
     {
-        if (arr1[i].Length <= 3)
+        if (arr1[i].Length <= SizeStringToShow)
         {
             arr2[count] = arr1[i];
             count++;
